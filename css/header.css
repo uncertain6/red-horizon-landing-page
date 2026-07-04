@@ -1,7 +1,14 @@
 .header {
+  height: 64px;
+
   display: flex;
-  height: 200px;
-  background-color: lightpink;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .left-part {
@@ -9,7 +16,7 @@
 }
 
 .logo {
-
+  color: white;
 }
 
 .middle-part {
