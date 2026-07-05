@@ -1,28 +1,62 @@
 .header {
-  height: 64px;
-
   display: flex;
+  position: fixed;
   flex-direction: row;
   justify-content: space-between;
-
-  position: fixed;
+  align-items: center;
+  
+  height: 64px;
   top: 0;
   right: 0;
   left: 0;
 }
 
-.left-part {
-
-}
-
 .logo {
+  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
   color: white;
+  letter-spacing: 3px;
+  margin-left: 120px;
 }
 
-.middle-part {
-
+.logo:hover {
+  color: #c83838;
 }
 
-.nav-buttom {
-  
+.nav-links {
+  display: flex;
+  font-size: 20px;
+  gap: 40px;
+  list-style: none;
+  margin-right: 120px;
+}
+
+.nav-button {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #c83838;
+  transition: width 0.3s;
+}
+
+.nav-button:hover {
+  color: #c83838;
+}
+
+.nav-button:hover::after {
+  width: 100%;
 }

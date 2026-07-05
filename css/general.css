@@ -1,10 +1,7 @@
-body {
-  margin: 0;
+html {
+  scroll-behavior: smooth;
 }
 
-h1, h2, .logo {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px; /* gives sci-fi feel */
-  text-transform: uppercase;
+body {
+  margin: 0;
 }
