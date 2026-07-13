@@ -19,46 +19,18 @@
     text-align: center;
     color: var(--paper-100);
     padding: 0 24px;
+    background: linear-gradient(180deg, #050506 0%, #0a0607 32%, #34100d 55%, #7c1f16 76%, var(--mars-600) 100%);
 }
 
-/* photo + dark fade/vignette, replaces the old flat background line */
-.hero {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--paper-100);
-    padding: 0 24px;
-    background: linear-gradient(
-        180deg,
-        #050506 0%,
-        #0a0607 32%,
-        #34100d 55%,
-        #7c1f16 76%,
-        var(--mars-600) 100%
-    );
-}
-
-/* the spotlight / search-light beam, fanning up from one source point */
 .hero::before {
     content: "";
     position: absolute;
-    left: 58%;
+    left: 50%;
     bottom: 8%;
     width: 900px;
     height: 140%;
     transform: translateX(-50%);
-    background: linear-gradient(
-        to top,
-        rgba(255, 150, 90, 0.9) 0%,
-        rgba(255, 120, 70, 0.35) 35%,
-        transparent 72%
-    );
+    background: linear-gradient(to top, rgba(255, 150, 90, 0.9) 0%, rgba(255, 120, 70, 0.35) 35%, transparent 72%);
     clip-path: polygon(49% 100%, 51% 100%, 100% 0%, 0% 0%);
     filter: blur(22px);
     mix-blend-mode: screen;
@@ -67,12 +39,6 @@
     animation: beam-pulse 6s ease-in-out infinite;
 }
 
-@keyframes beam-pulse {
-    0%, 100% { opacity: 0.75; }
-    50%      { opacity: 0.95; }
-}
-
-/* vignette so the nav + title stay readable against the bright bottom */
 .hero::after {
     content: "";
     position: absolute;
@@ -87,8 +53,9 @@
     z-index: 2;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .hero::before { animation: none; }
+@keyframes beam-pulse {
+    0%, 100% { opacity: 0.75; }
+    50% { opacity: 0.95; }
 }
 
 .hero-eyebrow {
@@ -139,7 +106,6 @@
     font-size: 17px;
     line-height: 1.6;
     color: var(--ink-mute);
-    font-weight: 400;
 }
 
 .hero-cta {
@@ -207,36 +173,19 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .hero::after,
+    .hero::before,
     .scroll-cue svg { animation: none; }
 }
 
 @media (max-width: 640px) {
-    .hero::after { width: 900px; height: 900px; }
+    .hero::before { width: 500px; }
     .hero-title { font-size: 42px; }
     .hero-title-sub { font-size: 28px; }
 }
 
-.mission {
-
-}
-
-.features {
-
-}
-
-.feature-card {
-
-}
-
-.journey {
-
-}
-
-.testimonial {
-
-}
-
-.pricing {
-
-}
+.mission {}
+.features {}
+.feature-card {}
+.journey {}
+.testimonial {}
+.pricing {}
