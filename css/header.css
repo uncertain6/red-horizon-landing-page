@@ -19,6 +19,7 @@
   color: white;
   letter-spacing: 3px;
   margin-left: 120px;
+  transition: color 0.15s;
 }
 
 .logo:hover {
