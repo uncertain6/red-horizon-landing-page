@@ -1,7 +1,19 @@
-html {
-  scroll-behavior: smooth;
+:root {
+  --void-900: #06060a;
+  --void-800: #0c0d16;
+  --mars-600: #c83838;
+  --mars-500: #ff5a36;
+  --gold-400: #ffb26b;
+  --paper-100: #f5f1e8;
+  --ink-mute: rgba(245, 241, 232, 0.62);
 }
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  background: var(--void-900);
+  font-family: "Exo 2", sans-serif;
 }

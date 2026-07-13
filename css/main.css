@@ -18,15 +18,15 @@
 }
 
 .hero-title {
-
+    font-size: 75px;
+    font-weight: 700;
+    font-family: "Orbitron", sans-serif;
 }
 
-.hero-description {
-
-}
-
-.hero-button {
-
+.hero-title-sub {
+    font-size:50px;
+    font-weight: 500;
+    font-family: "Orbitron", sans-serif;
 }
 
 .mission {
