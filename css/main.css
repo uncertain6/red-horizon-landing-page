@@ -137,11 +137,78 @@
     .hero-title-sub { font-size: 28px; }
 }
 
-.mission-div {
+.mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px;
+  background: var(--void-900);
+}
 
+.mission-div {
+  max-width: 640px;
+  text-align: center;
 }
 
 .mission-sub {
-    color: gray;
-    
+  font-size: 13px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: 0 0 20px;
+}
+
+.mission-hero {
+  font-family: "Orbitron", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--paper-100);
+  margin: 0 0 20px;
+}
+
+.mission-hero-highlight {
+  background: linear-gradient(90deg, var(--gold-400), var(--mars-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mission-desc {
+  font-size: 15px;
+  font-family: "Exo 2", sans-serif;
+  color: var(--ink-mute);
+  line-height: 1.6;
+  margin: 0 0 56px;
+}
+
+.mission-stats {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.mission-stat-num {
+  font-family: "Orbitron", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--paper-100);
+  margin: 0;
+}
+
+.mission-stat-sub {
+  font-size: 12px;
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(245, 241, 232, 0.5);
+  margin: 6px 0 0;
+}
+
+@media (max-width: 640px) {
+  .mission-hero { font-size: 28px; }
+  .mission-stats { gap: 32px; }
 }
