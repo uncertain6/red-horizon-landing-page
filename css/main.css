@@ -1,9 +1,8 @@
 .hero,
 .mission,
 .features,
-.pricing,
-.testimonial {
-    min-height: 100vh;
+.pricing {
+    min-height: 100dvh;
 }
 
 .hero {
