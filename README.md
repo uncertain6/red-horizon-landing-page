@@ -3,6 +3,6 @@
 A concept site for a Mars space-tourism brand. No framework, just HTML and CSS, built to look and feel like something SpaceX would actually ship — dark, cinematic, data-driven.
 
 ![Red Horizon hero](./preview.png)
-(./bg1.png)
-(./bg2.png)
-(./bg3.png)
+![Mission section](./bg1.png)
+![Features section](./bg2.png)
+![Pricing section](./bg3.png)
