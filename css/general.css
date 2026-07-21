@@ -12,81 +12,30 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 64px;
+  scroll-padding-top: 0px;
 }
 
 body {
   margin: 0;
-  background: var(--void-900);
+  background: black;
   font-family: "Exo 2", sans-serif;
-}
-
-
-.wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .label {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--mars-500);
+  color: #ff5a36;
   margin: 0 0 24px;
 }
 
 .title {
   font-family: "Orbitron", sans-serif;
-  font-size: clamp(28px, 5vw, 52px);
+  font-size: 52px;
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 2px;
-  color: var(--paper-100);
-  margin: 0;
-}
-
-.highlight {
-  background: linear-gradient(90deg, var(--gold-400), var(--mars-500));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.lede {
-  font-size: 16px;
-  color: var(--ink-mute);
-  line-height: 1.7;
-  max-width: 560px;
-  margin: 30px auto 64px;
-}
-
-.btn {
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 14px 30px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: var(--paper-100);
-  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
-}
-
-.btn-fill {
-  background: linear-gradient(90deg, var(--mars-600), var(--mars-500));
-  box-shadow: 0 8px 24px -8px rgba(255, 90, 54, 0.6);
-}
-
-.btn-fill:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px -8px rgba(255, 90, 54, 0.75);
-}
-
-.btn-line {
-  border: 1px solid rgba(245, 241, 232, 0.3);
-}
-
-.btn-line:hover {
-  background: rgba(245, 241, 232, 0.08);
+  color: white;
+  margin-top: 67px;
+  margin-bottom: 67px;
 }

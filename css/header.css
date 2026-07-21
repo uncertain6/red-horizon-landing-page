@@ -7,7 +7,6 @@
   right: 0;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.3);
   padding: 0 76px;
   z-index: 100;
 }
@@ -21,6 +20,7 @@
   color: white;
   transition: color 0.15s;
 }
+
 .logo:hover {
   color: rgb(255, 90, 54);
 }
@@ -29,6 +29,7 @@
   display: flex;
   gap: 36px;
 }
+
 .nav-links a {
   position: relative;
   font-size: 16px;
@@ -38,6 +39,7 @@
   color: white;
   transition: color 0.3s;
 }
+
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -48,6 +50,7 @@
   background: rgb(255, 90, 54);
   transition: width 0.3s;
 }
+
 .nav-links a:hover::after {
   width: 100%;
 }
